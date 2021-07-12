@@ -1,0 +1,24 @@
+{
+  "name": "1-herbalnatur",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wandasscarpato/Herbal-Natur.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wandasscarpato/Herbal-Natur/issues"
+  },
+  "homepage": "https://github.com/wandasscarpato/Herbal-Natur#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {},
+  "description": ""
+}

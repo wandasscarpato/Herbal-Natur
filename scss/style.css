@@ -1,0 +1,322 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: #eb9898 235, 196, 196;
+}
+
+header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 80%;
+      grid-template-columns: 20% 80%;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ebe9e9;
+  font-family: "Playfair Display", serif;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+header .headerLogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .headerLogo span {
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+header .headerLogo img {
+  width: 42.85px;
+  height: 37.71px;
+}
+
+nav ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-family: "Playfair Display", serif;
+}
+
+nav ul li {
+  font-size: 16px;
+  text-transform: uppercase;
+  height: 21px;
+  padding: 2rem;
+}
+
+nav ul li input {
+  padding: 0.3rem;
+  border-radius: 5px;
+  border: 1px gray solid;
+}
+
+.producto {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 650px;
+      grid-template-rows: 650px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  padding-bottom: 3rem;
+}
+
+.producto img {
+  width: 720px;
+  height: 650px;
+  opacity: 50%;
+}
+
+.producto .productoDescripcion {
+  padding: 4rem 0rem 0rem 2rem;
+  width: 80%;
+  text-align: start;
+}
+
+.producto .productoDescripcion .productoDescripcionTitulo {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+}
+
+.producto .productoDescripcion .productoDescripcionSubtitulo {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+}
+
+.producto .productoDescripcion ul li,
+.producto .productoDescripcion p {
+  opacity: 75%;
+}
+
+.producto .productoDescripcion div {
+  padding: 1.5rem 0;
+}
+
+.producto .productoDescripcion .productoDescripcionRecomendado {
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+
+.producto .productoDescripcion .productoDescripcionRecomendado ul {
+  margin-top: 15px;
+}
+
+.producto .productoDescripcion .productoDescripcionRecomendado ul li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 139px;
+  height: 40px;
+  margin: 2px 0;
+  border: 1px solid gray;
+}
+
+.producto .productoDescripcion .productoDescripcionPresentacion ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.producto .productoDescripcion .productoDescripcionPresentacion ul li {
+  margin-top: 5px;
+  border-right: 1px solid rgba(0, 0, 0, 0.746);
+  padding: 0px 5px;
+}
+
+.producto .productoDescripcion .productoDescripcionWpp {
+  padding-top: 2rem;
+}
+
+.producto .productoDescripcion .productoDescripcionWpp button {
+  width: 180px;
+  height: 50px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  border: 1px solid black;
+  background-color: white;
+  margin-top: 2rem;
+}
+
+.productoFinal {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.container .containerTitulo {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 2em;
+}
+
+.container ul li {
+  font-size: 17px;
+}
+
+.container ul li img {
+  background-color: white;
+  width: 220px;
+  height: 280px;
+  opacity: 50%;
+}
+
+footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 70% 30%;
+      grid-template-columns: 70% 30%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  background-color: #ebe9e9;
+}
+
+footer div {
+  font-size: 14px;
+  padding-left: 3.8em;
+}
+
+footer .footerRedes {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 3.8em;
+}
+
+footer .footerRedes li {
+  padding: 0.2em;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1440px) {
+  header {
+    -ms-grid-columns: 80% 20%;
+        grid-template-columns: 80% 20%;
+    height: 80px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .headerLogo {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    padding-left: 2rem;
+  }
+  header .headerLogo span {
+    font-size: 25px;
+  }
+  nav {
+    display: none;
+  }
+  .producto {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    font-size: 25px;
+  }
+  .producto img {
+    width: 100%;
+  }
+  .producto .productoDescripcion {
+    width: 90%;
+    padding: 0px;
+    font-size: 25px;
+    margin: 0 auto;
+  }
+  .producto .productoDescripcion .productoDescripcionTit {
+    text-align: center;
+  }
+  .producto .productoDescripcion .productoDescripcionTit span {
+    font-size: 30px;
+  }
+  .producto .productoDescripcion .productoDescripcionWpp button {
+    width: 100%;
+    font-size: 30px;
+  }
+  .producto .productoDescripcion .productoDescripcionCaracteristicas .productoDescripcionSubtitulo,
+  .producto .productoDescripcion .productoDescripcionWpp .productoDescripcionSubtitulo,
+  .producto .productoDescripcion .productoDescripcionPresentacion .productoDescripcionSubtitulo,
+  .producto .productoDescripcion .productoDescripcionRecomendado .productoDescripcionSubtitulo {
+    font-size: 25px;
+  }
+  .container {
+    display: none;
+  }
+  footer.footerRedes {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: redes;
+  }
+  .derechosReservados {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: derechos;
+    font-size: 17px;
+    padding: 0;
+  }
+  footer {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "redes" "derechos";
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  ul.footerRedes {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0;
+  }
+  ul.footerRedes li i {
+    font-size: 30px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

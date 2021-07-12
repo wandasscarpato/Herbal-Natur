@@ -1,0 +1,251 @@
+$--fuentePrincipal: "Playfair Display", serif;
+$--colorPrincipal: rgb(235, 233, 233);
+$--fuenteSecundaria: "Roboto", sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  background-color: rgb(235, 152, 152) (235, 196, 196);
+}
+header {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  text-align: center;
+  align-items: center;
+  background-color: $--colorPrincipal;
+  font-family: $--fuentePrincipal;
+  align-items: baseline;
+  .headerLogo {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    span {
+      font-size: 18px;
+      font-weight: bolder;
+    }
+    img {
+      width: 42.85px;
+      height: 37.71px;
+    }
+  }
+}
+
+nav ul {
+  display: inline-flex;
+  font-family: $--fuentePrincipal;
+  li {
+    font-size: 16px;
+    text-transform: uppercase;
+    height: 21px;
+    padding: 2rem;
+    input {
+      padding: 0.3rem;
+      border-radius: 5px;
+      border: 1px gray solid;
+    }
+  }
+}
+.producto {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 650px;
+  font-family: $--fuenteSecundaria;
+  font-weight: 300;
+  padding-bottom: 3rem;
+  img {
+    width: 720px;
+    height: 650px;
+    opacity: 50%;
+  }
+  .productoDescripcion {
+    padding: 4rem 0rem 0rem 2rem;
+    width: 80%;
+    text-align: start;
+    .productoDescripcionTitulo {
+      font-family: $--fuentePrincipal;
+      font-size: 24px;
+    }
+    .productoDescripcionSubtitulo {
+      font-family: $--fuenteSecundaria;
+      font-size: 16px;
+      font-weight: 500;
+      color: black;
+    }
+    ul li,
+    p {
+      opacity: 75%;
+    }
+    div {
+      padding: 1.5rem 0;
+    }
+    .productoDescripcionRecomendado {
+      border-bottom: 1px solid black;
+      border-top: 1px solid black;
+      ul {
+        margin-top: 15px;
+        li {
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          width: 139px;
+          height: 40px;
+          margin: 2px 0;
+          border: 1px solid gray;
+        }
+      }
+    }
+    .productoDescripcionPresentacion {
+      ul {
+        display: flex;
+        li {
+          margin-top: 5px;
+          border-right: 1px solid rgba(0, 0, 0, 0.746);
+          padding: 0px 5px;
+        }
+      }
+    }
+    .productoDescripcionWpp {
+      padding-top: 2rem;
+      button {
+        width: 180px;
+        height: 50px;
+        font-size: 20px;
+        font-family: $--fuenteSecundaria;
+        font-weight: 300;
+        border: 1px solid black;
+        background-color: white;
+        margin-top: 2rem;
+      }
+    }
+  }
+}
+.productoFinal {
+  width: 90%;
+  margin: 0 auto;
+}
+.container {
+  padding-top: 2rem;
+  text-align: center;
+  .containerTitulo {
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2em;
+    li {
+      font-size: 17px;
+      img {
+        background-color: white;
+        width: 220px;
+        height: 280px;
+        opacity: 50%;
+      }
+    }
+  }
+}
+footer {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  align-items: center;
+  padding: 1rem;
+  background-color: $--colorPrincipal;
+  div {
+    font-size: 14px;
+    padding-left: 3.8em;
+  }
+  .footerRedes {
+    display: inline-flex;
+    justify-content: flex-end;
+    padding-right: 3.8em;
+    li {
+      padding: 0.2em;
+    }
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1440px) {
+  header {
+    grid-template-columns: 80% 20%;
+    height: 80px;
+    align-items: center;
+    .headerLogo {
+      justify-content: start;
+      padding-left: 2rem;
+      span {
+        font-size: 25px;
+      }
+    }
+  }
+  nav {
+    display: none;
+  }
+  .producto {
+    grid-template-columns: 100%;
+    font-size: 25px;
+    img {
+      width: 100%;
+    }
+    .productoDescripcion {
+      width: 90%;
+      padding: 0px;
+      font-size: 25px;
+      margin: 0 auto;
+      .productoDescripcionTit {
+        text-align: center;
+        span {
+          font-size: 30px;
+        }
+      }
+      .productoDescripcionWpp{
+        button{
+          width: 100%;
+          font-size: 30px;
+        }
+      }
+    .productoDescripcionCaracteristicas,
+    .productoDescripcionWpp,
+    .productoDescripcionPresentacion,
+    .productoDescripcionRecomendado {
+      .productoDescripcionSubtitulo {
+        font-size: 25px;
+      }
+    }
+    }
+  }
+  .container{
+    display: none;
+  }
+  
+  footer.footerRedes{
+    grid-area:redes;
+  }
+  .derechosReservados{
+    grid-area:derechos;
+    font-size: 17px;
+    padding: 0;
+  }
+  footer{
+    display: grid;
+    grid-template-areas: 
+    "redes"
+    "derechos";
+    justify-content: center;
+    text-align: center;
+    grid-template-columns: 100%;
+  }
+  ul.footerRedes {
+    justify-content: center;
+    padding: 0;
+    li{
+      i{
+        font-size: 30px;
+      }
+    }
+}
+}
