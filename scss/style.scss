@@ -1,23 +1,29 @@
 $--fuentePrincipal: "Playfair Display", serif;
 $--colorPrincipal: rgb(235, 233, 233);
 $--fuenteSecundaria: "Roboto", sans-serif;
+%btn{
+      width: 180px;
+      height: 50px;
+      font-size: 20px;
+      font-family: $--fuenteSecundaria;
+      font-weight: 300;
+      border: 1px solid black;
+      background-color: rgba(255, 255, 255, 0);
+}
 * {
   padding: 0;
   margin: 0;
   text-decoration: none;
   list-style: none;
 }
-body {
-  background-color: rgb(235, 152, 152) (235, 196, 196);
-}
 header {
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 20% 60% 20%;
   text-align: center;
   align-items: center;
   background-color: $--colorPrincipal;
   font-family: $--fuentePrincipal;
-  align-items: baseline;
+  align-items: center;
   .headerLogo {
     display: flex;
     align-items: center;
@@ -32,22 +38,24 @@ header {
       height: 37.71px;
     }
   }
-}
-
-nav ul {
-  display: inline-flex;
-  font-family: $--fuentePrincipal;
-  li {
-    font-size: 16px;
-    text-transform: uppercase;
-    height: 21px;
-    padding: 2rem;
-    input {
-      padding: 0.3rem;
-      border-radius: 5px;
-      border: 1px gray solid;
+  nav ul {
+    display: inline-flex;
+    font-family: $--fuentePrincipal;
+    li {
+      font-size: 16px;
+      text-transform: uppercase;
+      height: 21px;
+      padding: 2rem;
     }
   }
+}
+
+header input {
+  padding: 0.4rem;
+  width: 60%;
+  margin-top:-2px;
+  border-radius: 5px;
+  border: 1px gray solid;
 }
 .producto {
   display: grid;
@@ -109,16 +117,9 @@ nav ul {
       }
     }
     .productoDescripcionWpp {
-      padding-top: 2rem;
+      padding-top: 4rem;
       button {
-        width: 180px;
-        height: 50px;
-        font-size: 20px;
-        font-family: $--fuenteSecundaria;
-        font-weight: 300;
-        border: 1px solid black;
-        background-color: white;
-        margin-top: 2rem;
+        @extend %btn;
       }
     }
   }
@@ -169,7 +170,7 @@ footer {
   }
 }
 
-@media only screen and (min-width: 0px) and (max-width: 1440px) {
+@media only screen and (min-width: 0px) and (max-width: 1439px) {
   header {
     grid-template-columns: 80% 20%;
     height: 80px;
@@ -247,5 +248,170 @@ footer {
         font-size: 30px;
       }
     }
+}
+}
+/*  INDEX   ---------------------------------------------------------------*/
+
+.indexImagen{
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background-color: gray;
+    .indexImagenImagen{
+      img{
+        width: 1440px;
+        height: 600px;
+        opacity: 40%;
+      }
+    }
+  .indexImagenTexto{
+    display: block;
+    position: absolute;
+    top:30%;
+    color: white;
+    width: 40%;
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    h1{
+      font-size: 46px;
+      font-family: $--fuentePrincipal;
+      text-transform: uppercase;
+    }
+    p{
+      padding: 1rem;
+      font-size: 20px;
+      font-family: $--fuenteSecundaria;
+      font-weight: 300;
+    }
+    button{
+      @extend %btn;
+    }
+  }
+}
+.indexCategorias{
+  display: grid;
+  grid-template-columns: 23% 23% 23%;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 2rem;
+  grid-gap:1rem;
+  div{
+    position: relative;
+    img{
+      width: 100%;
+      max-height: 250px;
+      opacity: 40%;
+    }
+    span{
+      width:50%;
+      height: 15%;
+      position: absolute;
+      top:42.5%;
+      left: 25%;
+      font-size: 20px;
+      font-family: $--fuentePrincipal;
+    }
+  }
+}
+.indexSubtitulo{
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+div.primero{
+  grid-area: primero;
+}
+div.segundo{
+  grid-area: segundo;
+}
+div.tercero{
+  grid-area: tercero;
+}
+div.cuarto{
+  grid-area: cuarto;
+}
+h2.tituloEleginos{
+  grid-area: eleginos;
+}
+.indexElegirnos{
+  display: grid;
+  grid-template-areas: 
+  "eleginos eleginos eleginos eleginos"
+  "primero segundo tercero cuarto";
+  grid-template-columns: 17.25% 17.25% 17.25% 17.25%;
+  text-align: center;
+  justify-content: center;
+  background-color: $--colorPrincipal;
+  padding-bottom: 4rem;
+  img{
+    width: 160px;
+    height: 160px;
+    border-radius: 100%;
+  }
+  h3,p{
+    width: 55%;
+    padding: 1rem;
+    text-align: center;
+    margin: 0 auto;
+    font-family: $--fuentePrincipal;
+  }
+  p{
+    width: 90%;
+    padding: 0;
+    font-family: $--fuenteSecundaria;
+    font-weight: 300;
+  }
+}
+.indexRevendedores{
+  width: 75%;
+  text-align: center;
+  margin: 0 auto;
+  p{
+    font-size: 16px;
+    padding-bottom: 2rem;
+    font-family: $--fuenteSecundaria;
+    font-weight: 300;
+  }
+  button{
+    @extend %btn;
+    margin-bottom: 4rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  .indexCategorias{
+    grid-template-columns: 35% 35%;
+  }
+  .indexElegirnos{
+    display: grid;
+    grid-template-areas: 
+    "eleginos eleginos"
+    "primero segundo"
+    "tercero cuarto";
+    grid-template-columns: 35% 35%;
+    grid-gap: 1rem;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 1023px) {
+  .indexCategorias{
+    grid-template-columns: 60%;
+  }
+  .indexElegirnos{
+    display: grid;
+    grid-template-areas: 
+    "eleginos"
+    "primero" "segundo"
+    "tercero" "cuarto";
+    grid-template-columns: 60%;
+    grid-gap: 1rem;
+  }
+  .indexElegirnos,.indexRevendedores,.indexCategorias{
+    font-size: 20px;
+  }
+  .indexImagenTexto{
+    width: 80%!important;
+    margin-left: 10%!important;
+    margin-right: 10%!important;
 }
 }

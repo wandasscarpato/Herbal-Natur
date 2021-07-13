@@ -1,3 +1,13 @@
+.producto .productoDescripcion .productoDescripcionWpp button, .indexImagen .indexImagenTexto button, .indexRevendedores button {
+  width: 180px;
+  height: 50px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  border: 1px solid black;
+  background-color: rgba(255, 255, 255, 0);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -5,24 +15,18 @@
   list-style: none;
 }
 
-body {
-  background-color: #eb9898 235, 196, 196;
-}
-
 header {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 20% 80%;
-      grid-template-columns: 20% 80%;
+  -ms-grid-columns: 20% 60% 20%;
+      grid-template-columns: 20% 60% 20%;
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   background-color: #ebe9e9;
   font-family: "Playfair Display", serif;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  align-items: center;
 }
 
 header .headerLogo {
@@ -48,22 +52,24 @@ header .headerLogo img {
   height: 37.71px;
 }
 
-nav ul {
+header nav ul {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   font-family: "Playfair Display", serif;
 }
 
-nav ul li {
+header nav ul li {
   font-size: 16px;
   text-transform: uppercase;
   height: 21px;
   padding: 2rem;
 }
 
-nav ul li input {
-  padding: 0.3rem;
+header input {
+  padding: 0.4rem;
+  width: 60%;
+  margin-top: -2px;
   border-radius: 5px;
   border: 1px gray solid;
 }
@@ -151,18 +157,7 @@ nav ul li input {
 }
 
 .producto .productoDescripcion .productoDescripcionWpp {
-  padding-top: 2rem;
-}
-
-.producto .productoDescripcion .productoDescripcionWpp button {
-  width: 180px;
-  height: 50px;
-  font-size: 20px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  border: 1px solid black;
-  background-color: white;
-  margin-top: 2rem;
+  padding-top: 4rem;
 }
 
 .productoFinal {
@@ -232,7 +227,7 @@ footer .footerRedes li {
   padding: 0.2em;
 }
 
-@media only screen and (min-width: 0px) and (max-width: 1440px) {
+@media only screen and (min-width: 0px) and (max-width: 1439px) {
   header {
     -ms-grid-columns: 80% 20%;
         grid-template-columns: 80% 20%;
@@ -317,6 +312,205 @@ footer .footerRedes li {
   }
   ul.footerRedes li i {
     font-size: 30px;
+  }
+}
+
+/*  INDEX   ---------------------------------------------------------------*/
+.indexImagen {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background-color: gray;
+}
+
+.indexImagen .indexImagenImagen img {
+  width: 1440px;
+  height: 600px;
+  opacity: 40%;
+}
+
+.indexImagen .indexImagenTexto {
+  display: block;
+  position: absolute;
+  top: 30%;
+  color: white;
+  width: 40%;
+  text-align: center;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.indexImagen .indexImagenTexto h1 {
+  font-size: 46px;
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+}
+
+.indexImagen .indexImagenTexto p {
+  padding: 1rem;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.indexCategorias {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 23% 23% 23%;
+      grid-template-columns: 23% 23% 23%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding-bottom: 2rem;
+  grid-gap: 1rem;
+}
+
+.indexCategorias div {
+  position: relative;
+}
+
+.indexCategorias div img {
+  width: 100%;
+  max-height: 250px;
+  opacity: 40%;
+}
+
+.indexCategorias div span {
+  width: 50%;
+  height: 15%;
+  position: absolute;
+  top: 42.5%;
+  left: 25%;
+  font-size: 20px;
+  font-family: "Playfair Display", serif;
+}
+
+.indexSubtitulo {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+div.primero {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: primero;
+}
+
+div.segundo {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: segundo;
+}
+
+div.tercero {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: tercero;
+}
+
+div.cuarto {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: cuarto;
+}
+
+h2.tituloEleginos {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: eleginos;
+}
+
+.indexElegirnos {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "eleginos eleginos eleginos eleginos" "primero segundo tercero cuarto";
+  -ms-grid-columns: 17.25% 17.25% 17.25% 17.25%;
+      grid-template-columns: 17.25% 17.25% 17.25% 17.25%;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ebe9e9;
+  padding-bottom: 4rem;
+}
+
+.indexElegirnos img {
+  width: 160px;
+  height: 160px;
+  border-radius: 100%;
+}
+
+.indexElegirnos h3, .indexElegirnos p {
+  width: 55%;
+  padding: 1rem;
+  text-align: center;
+  margin: 0 auto;
+  font-family: "Playfair Display", serif;
+}
+
+.indexElegirnos p {
+  width: 90%;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.indexRevendedores {
+  width: 75%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.indexRevendedores p {
+  font-size: 16px;
+  padding-bottom: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.indexRevendedores button {
+  margin-bottom: 4rem;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  .indexCategorias {
+    -ms-grid-columns: 35% 35%;
+        grid-template-columns: 35% 35%;
+  }
+  .indexElegirnos {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "eleginos eleginos" "primero segundo" "tercero cuarto";
+    -ms-grid-columns: 35% 35%;
+        grid-template-columns: 35% 35%;
+    grid-gap: 1rem;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1023px) {
+  .indexCategorias {
+    -ms-grid-columns: 60%;
+        grid-template-columns: 60%;
+  }
+  .indexElegirnos {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "eleginos" "primero" "segundo" "tercero" "cuarto";
+    -ms-grid-columns: 60%;
+        grid-template-columns: 60%;
+    grid-gap: 1rem;
+  }
+  .indexElegirnos, .indexRevendedores, .indexCategorias {
+    font-size: 20px;
+  }
+  .indexImagenTexto {
+    width: 80% !important;
+    margin-left: 10% !important;
+    margin-right: 10% !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
