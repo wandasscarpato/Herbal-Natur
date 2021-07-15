@@ -3,6 +3,22 @@
     padding: 0%;
 }
 
+/*Botones*/
+.filtrado {
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 10px 0;
+    transition: 0.3s; 
+}
+  
+.filtrado:hover {
+    background: rgb(160, 160, 160);
+    width: 100%;
+}
+
 header a{
  text-decoration: none;
 }
@@ -12,6 +28,10 @@ main{
     height: 325px;
     background-color: rgb(226, 226, 226);    
 }
+
+
+/*QUIENES SOMOS*/
+
 .quienesSomos{
     padding-left: 15%;
     padding-right: 15%;
@@ -21,13 +41,20 @@ main{
 .quienesSomosTitulo{
     font-family: 'Playfair Display', serif;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 24px;
 }
 .quienesSomosSubTitulo{
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     font-size: 1.4rem;
 }
+
+.quienesSomosSubTituloP{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
 .quienesSomosParrafo{
     font-family: 'Roboto', sans-serif;
     font-weight:400;
@@ -86,6 +113,73 @@ main{
 }
 
 
+/*PRODUCTOS*/
+.productosListaContenedor{
+    width: 80%;
+    margin-bottom: 4%; 
+    padding-left:8%;
+
+}
+
+.productosLista{
+    padding-top: 4%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+  
+  .productosSeccion {
+    padding-top: 6%;
+    width: 20%;
+    border-radius: 9px;
+    height: auto; 
+}
+  
+  .prodoductosContenedor {
+    padding-top: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center; 
+}
+  
+  .productos {
+      text-align: center;
+    width: 220px;
+    height: auto;
+    margin: 10px;
+}
+
+
+    .filtro{
+     margin-bottom: 60px;
+    }
+
+.filtroDrop{
+    width: 100%;
+    display: none;
+}
+
+.filtroDropB{
+    margin-top: 20px;
+    width: 120px;
+    height: 24px;
+    display: inline-block;
+    background-color: rgb(219, 219, 219);
+border: #8b8b8b 0.1px solid;
+border-radius: 5px;
+}
+
+.filtroDrop a{
+display: inline-block;
+
+}
+
+    /*MEDIAQ*/
+
 @media (max-width: 1024px){
     .todosNuestrosProductos{
         flex-direction: column;
@@ -110,6 +204,37 @@ main{
         text-align: center;
     }
 }
+@media (max-width: 950px){
+    .productosSeccion {
+       display: none;
+    }
+    .productosListaContenedor{
+        width: 100%;
+        padding-left:0%;
+        text-align: center;
+    
+    }
+
+    .productosLista{
+        justify-content: center;
+    }
+
+    .filtroDrop{
+        display: contents;
+        }
+        .productos {
+          width: 180px;
+      }
+      .productos img{
+        height: auto;
+        width: 180px;
+      
+      }
+      .prodoductosContenedor {
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+}
 
 @media (max-width: 450px){
     .quienesSomos{
@@ -131,6 +256,19 @@ main{
 
     .TodosNuestrosP{
         width: 100px;
+    }
+
+}
+
+@media (max-width: 400px){
+
+    .productos {
+        width: 240px;
+    }
+    .productos img{
+      height: auto;
+      width: 240px;
+    
     }
 }
 
