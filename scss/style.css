@@ -1,10 +1,13 @@
-.producto .productoDescripcion .productoDescripcionWpp button, .indexImagen .indexImagenTexto button, .indexRevendedores button {
+.producto .productoDescripcion .productoDescripcionWpp button, .indexImagen .indexImagenTexto button, .indexRevendedores button, .contactoGrid article div .contactoGridBtn {
   width: 180px;
   height: 50px;
   font-size: 20px;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   border: 1px solid black;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: rgba(255, 255, 255, 0);
 }
 
@@ -13,6 +16,10 @@
   margin: 0;
   text-decoration: none;
   list-style: none;
+}
+
+a {
+  color: black;
 }
 
 header {
@@ -24,7 +31,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #ebe9e9;
+  background-color: #f1eeee;
   font-family: "Playfair Display", serif;
   align-items: center;
 }
@@ -205,7 +212,7 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   padding: 1rem;
-  background-color: #ebe9e9;
+  background-color: #f1eeee;
 }
 
 footer div {
@@ -245,7 +252,7 @@ footer .footerRedes li {
   header .headerLogo span {
     font-size: 25px;
   }
-  nav {
+  header nav, header input {
     display: none;
   }
   .producto {
@@ -434,7 +441,7 @@ h2.tituloEleginos {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #ebe9e9;
+  background-color: #f1eeee;
   padding-bottom: 4rem;
 }
 
@@ -511,6 +518,95 @@ h2.tituloEleginos {
     width: 80% !important;
     margin-left: 10% !important;
     margin-right: 10% !important;
+  }
+}
+
+/*CONTACTO -------------------------------------------------------*/
+.contactoGrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 35% 40%;
+      grid-template-columns: 35% 40%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 6rem;
+}
+
+.contactoGrid main {
+  padding: 3rem;
+}
+
+.contactoGrid main h3 {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-family: "Playfair Display", serif;
+}
+
+.contactoGrid main p {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  padding-top: 2rem;
+  width: 85%;
+}
+
+.contactoGrid main .contactoGridP {
+  padding-top: 1rem;
+}
+
+.contactoGrid article {
+  padding-top: 7rem;
+}
+
+.contactoGrid article input, .contactoGrid article textarea {
+  width: 94%;
+  border: #c3c3c3 1px solid;
+  border-radius: 5px;
+  padding: 2%;
+  margin: 0.5em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.contactoGrid article textarea {
+  height: 200px;
+}
+
+.contactoGrid article div {
+  text-align: end;
+}
+
+.contactoGrid article div .contactoGridBtn {
+  border-radius: 0;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1439px) {
+  .contactoGrid {
+    -ms-grid-columns: 85%;
+        grid-template-columns: 85%;
+    padding-bottom: 2rem !important;
+  }
+  .contactoGrid main p {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    padding-top: 2rem;
+    width: 100%;
+  }
+  .contactoGrid article {
+    padding-top: 0px !important;
+    margin: 0rem 2.5rem;
+  }
+  .contactoGrid div {
+    text-align: center !important;
+  }
+  .contactoGrid div .contactoGridBtn {
+    width: 98% !important;
+    border-radius: 0;
+  }
+  input, textarea {
+    width: 85%;
   }
 }
 /*# sourceMappingURL=style.css.map */

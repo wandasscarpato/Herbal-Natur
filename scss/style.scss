@@ -1,5 +1,5 @@
 $--fuentePrincipal: "Playfair Display", serif;
-$--colorPrincipal: rgb(235, 233, 233);
+$--colorPrincipal: rgb(241, 238, 238);
 $--fuenteSecundaria: "Roboto", sans-serif;
 %btn{
       width: 180px;
@@ -8,6 +8,7 @@ $--fuenteSecundaria: "Roboto", sans-serif;
       font-family: $--fuenteSecundaria;
       font-weight: 300;
       border: 1px solid black;
+      align-items: center;
       background-color: rgba(255, 255, 255, 0);
 }
 * {
@@ -15,6 +16,9 @@ $--fuenteSecundaria: "Roboto", sans-serif;
   margin: 0;
   text-decoration: none;
   list-style: none;
+}
+a{
+  color:black;
 }
 header {
   display: grid;
@@ -182,10 +186,11 @@ footer {
         font-size: 25px;
       }
     }
+    nav, input {
+      display: none;
+    }
   }
-  nav {
-    display: none;
-  }
+  
   .producto {
     grid-template-columns: 100%;
     font-size: 25px;
@@ -414,4 +419,82 @@ h2.tituloEleginos{
     margin-left: 10%!important;
     margin-right: 10%!important;
 }
+}
+/*CONTACTO -------------------------------------------------------*/
+.contactoGrid{
+  display: grid;
+  grid-template-columns: 35% 40%;
+  justify-content: center;
+  padding-bottom: 6rem;
+  main{
+    padding: 3rem;
+    h3{
+      text-transform: uppercase;
+      font-size: 24px;
+      font-family: $--fuentePrincipal;
+    }
+    p{
+      font-size: 16px;
+      font-family: $--fuenteSecundaria;
+      font-weight: 300;
+      padding-top: 2rem;
+      width: 85%;
+    }
+    .contactoGridP{
+      padding-top: 1rem;
+    }
+  }
+  article{
+    padding-top: 7rem;
+    input, textarea{
+      width: 94%;
+      border: rgb(195, 195, 195) 1px solid;
+      border-radius: 5px;
+      padding: 2%;
+      margin: 0.5em;
+      font-family: $--fuenteSecundaria;
+      font-weight: 300;
+    }
+    textarea{
+      height: 200px;
+    }
+    div{
+      text-align: end;
+      .contactoGridBtn{
+        @extend %btn;
+        border-radius: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1439px) {
+  .contactoGrid{
+    grid-template-columns: 85%;
+    padding-bottom: 2rem!important;
+    main{
+      p{
+        font-size: 16px;
+        font-family: $--fuenteSecundaria;
+        font-weight: 300;
+        padding-top: 2rem;
+        width: 100%;
+      }
+    }
+  article{
+    padding-top: 0px!important;
+    margin: 0rem 2.5rem;
+    }
+    div{
+      text-align: center!important;
+      .contactoGridBtn{
+        width: 98%!important;
+        border-radius: 0;
+      }
+    }
+  }
+  input, textarea{
+    width: 85%;
+    }
+    
 }
