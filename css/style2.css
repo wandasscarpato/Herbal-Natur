@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0%;
+}
+
+header a{
+ text-decoration: none;
+}
+
+main{
+    width: 100%;
+    height: 325px;
+    background-color: rgb(226, 226, 226);    
+}
+.quienesSomos{
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-top: 85px;
+    margin-bottom: 85px;
+}
+.quienesSomosTitulo{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.quienesSomosSubTitulo{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+.quienesSomosParrafo{
+    font-family: 'Roboto', sans-serif;
+    font-weight:400;
+    margin-top:30px;
+    font-size: 1rem;
+}
+
+.quienesSomos hr{
+    height: 0.5px;
+    color: black;
+    background-color: black;
+    margin-bottom: 45px;
+    margin-top: 45px;
+}
+
+.todosNuestrosProductos{
+    background-color: rgb(226, 226, 226);  
+    padding-top: 55px;
+    padding-bottom: 55px;
+    padding-left: 15%;
+    padding-right: 15%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.todosNuestrosProdUno{
+    width: 33.333%;
+}
+
+.todosNuestrosProdDos{
+    width: 66.666%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.TodosNuestrosP{
+    margin-left: 5%;
+    width: 150px;
+    height: auto;
+    text-align: center;
+}
+
+.TodosNuestrosP img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.TodosNuestrosP h4{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+
+@media (max-width: 1024px){
+    .todosNuestrosProductos{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .todosNuestrosProdUno{
+        text-align: center;
+        width: 100%;
+    }
+
+    .todosNuestrosProdDos{
+        margin-top: 30px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .TodosNuestrosP{
+        margin: 6%;
+        width: 150px;
+        height: auto;
+        text-align: center;
+    }
+}
+
+@media (max-width: 450px){
+    .quienesSomos{
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .quienesSomosTitulo{
+        font-size: 1.5rem;
+    }
+
+    .quienesSomosSubTitulo{
+        font-size: 1.1rem;
+    }
+
+    .todosNuestrosProdDos{
+     flex-wrap: wrap;
+    }
+
+    .TodosNuestrosP{
+        width: 100px;
+    }
+}
+
+@media (max-width: 320px){
+
+    .TodosNuestrosP{
+        width: 150px;
+    }
+}
