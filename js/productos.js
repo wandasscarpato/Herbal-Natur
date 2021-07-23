@@ -26,7 +26,7 @@ $.getJSON(URLGET, function (respuesta, estado) {
            <div class="productos">
               <img src="../img/producto1.png" alt="Producto">
                <h3 class="quienesSomosSubTituloP"> ${productos.nombre}
-              de almendras</h3>
+              </h3>
            </div>
            `;
           });
