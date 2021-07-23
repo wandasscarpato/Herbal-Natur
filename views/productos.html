@@ -20,19 +20,33 @@
 
 <!--BARRA DE NAVEGACIÓN-->
 <header>
-    <div class="headerLogo">
-      <a href="index.html"> <img src="../assets/img/hn.png" alt="logo"></a> 
-        <span>Herbal Natur</span>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="#">Quiénes somos</a></li>
-            <li><a href="#">Productos</a></li>
-            <li><a href="#">Revendedores</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </nav>
-    <input type="text" name="buscador" placeholder="Buscar">
+  <div class="headerLogo">
+      <a href="../index.html"><img src="../assets/img/hn.png" alt="logo"></a>
+      <span>Herbal Natur</span>
+  </div>
+  <nav>
+      <ul>
+          <li>Quiénes somos</li>
+          <li><a href="#">Productos</a></li>
+          <li><a href="#">Revendedores</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+      </ul>
+  </nav>
+  <input type="text" name="buscador" placeholder="Buscar">
+  <div class="menu">
+      <div class="icono-menu">
+          <img src="../img/MenuH.png" class="btn-icono-menu" alt="">
+      </div>
+         <div class="content-menu active" id="menu">
+          <img src="../img/salir.png" class="btn-icono salir" alt="">
+          <ul>
+              <li>Quiénes somos</li>
+              <li><a href="#">Productos</a></li>
+              <li><a href="#">Revendedores</a></li>
+              <li><a href="./contacto.html">Contacto</a></li>
+          </ul>
+      </div>
+  </div>
 </header>
 
 <!--PRODUCTOS-->
@@ -197,4 +211,5 @@
     </ul>
 </footer>
 </body>
+<script src="../js/menu.js"></script>
 </html>

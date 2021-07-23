@@ -1,15 +1,16 @@
 $--fuentePrincipal: "Playfair Display", serif;
 $--colorPrincipal: rgb(241, 238, 238);
 $--fuenteSecundaria: "Roboto", sans-serif;
-%btn{
-      width: 180px;
-      height: 50px;
-      font-size: 20px;
-      font-family: $--fuenteSecundaria;
-      font-weight: 300;
-      border: 1px solid black;
-      align-items: center;
-      background-color: rgba(255, 255, 255, 0);
+%btn {
+  width: 180px;
+  height: 50px;
+  font-size: 20px;
+  font-family: $--fuenteSecundaria;
+  font-weight: 300;
+  border: 1px solid black;
+  align-items: center;
+  flex-direction: row;
+  background-color: rgba(255, 255, 255, 0);
 }
 * {
   padding: 0;
@@ -17,12 +18,12 @@ $--fuenteSecundaria: "Roboto", sans-serif;
   text-decoration: none;
   list-style: none;
 }
-a{
-  color:black;
+a {
+  color: black;
 }
 header {
   display: grid;
-  grid-template-columns: 20% 60% 20%;
+  grid-template-columns: 20% 55% 15% 10%;
   text-align: center;
   align-items: center;
   background-color: $--colorPrincipal;
@@ -57,10 +58,67 @@ header {
 header input {
   padding: 0.4rem;
   width: 60%;
-  margin-top:-2px;
+  margin-top: -2px;
   border-radius: 5px;
   border: 1px gray solid;
 }
+.icono-menu{
+  position: relative;
+  z-index: 10;
+  img{
+    vertical-align: top;
+    width:30px;
+    cursor:pointer;
+  }
+}
+.menu{
+  display:none;
+}
+.content-menu{
+  background-color: white;
+  box-shadow: 2px 0px 10px 1px grey;
+  width:100%;
+  height: 100vh;
+  top:0;
+  left: 0;
+  transition: all .5s ease;
+  z-index: 11;
+  position: absolute;
+  text-align:end;
+  .salir{
+    background-color: rgba(243, 243, 243, 0);
+    border:none;
+    width:30px;
+    padding-top: 2rem;
+    font-size:30px;
+    padding-right: 2rem;
+  }
+  ul{
+    padding: 25px 0px 20px 0px;
+    text-align: start;
+    li{
+      color:black;
+      font-size: 25px;
+      font-family: $--fuentePrincipal;
+      margin: 10px 50px;
+      cursor: pointer;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid black;
+    }
+    li:hover{
+      background-color: white;
+    }
+  }
+}
+.opacity{
+  background-color: white;
+  transition: all 5s ease;
+}
+.active{
+  transition: opacity 0.5s ease-out;
+  opacity: 0;
+  visibility: hidden;
+} 
 .producto {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -155,6 +213,7 @@ header input {
   }
 }
 footer {
+  margin-top: 2rem;
   display: grid;
   grid-template-columns: 70% 30%;
   align-items: center;
@@ -173,7 +232,6 @@ footer {
     }
   }
 }
-
 @media only screen and (min-width: 0px) and (max-width: 1439px) {
   header {
     grid-template-columns: 80% 20%;
@@ -186,11 +244,15 @@ footer {
         font-size: 25px;
       }
     }
-    nav, input {
+    nav,
+    input {
       display: none;
     }
+    .menu{
+      display:block;
+    }
   }
-  
+
   .producto {
     grid-template-columns: 100%;
     font-size: 25px;
@@ -208,39 +270,39 @@ footer {
           font-size: 30px;
         }
       }
-      .productoDescripcionWpp{
-        button{
+      .productoDescripcionWpp {
+        button {
           width: 100%;
           font-size: 30px;
         }
       }
-    .productoDescripcionCaracteristicas,
-    .productoDescripcionWpp,
-    .productoDescripcionPresentacion,
-    .productoDescripcionRecomendado {
-      .productoDescripcionSubtitulo {
-        font-size: 25px;
+      .productoDescripcionCaracteristicas,
+      .productoDescripcionWpp,
+      .productoDescripcionPresentacion,
+      .productoDescripcionRecomendado {
+        .productoDescripcionSubtitulo {
+          font-size: 25px;
+        }
       }
     }
-    }
   }
-  .container{
+  .container {
     display: none;
   }
-  
-  footer.footerRedes{
-    grid-area:redes;
+
+  footer.footerRedes {
+    grid-area: redes;
   }
-  .derechosReservados{
-    grid-area:derechos;
+  .derechosReservados {
+    grid-area: derechos;
     font-size: 17px;
     padding: 0;
   }
-  footer{
+  footer {
     display: grid;
-    grid-template-areas: 
-    "redes"
-    "derechos";
+    grid-template-areas:
+      "redes"
+      "derechos";
     justify-content: center;
     text-align: center;
     grid-template-columns: 100%;
@@ -248,205 +310,219 @@ footer {
   ul.footerRedes {
     justify-content: center;
     padding: 0;
-    li{
-      i{
+    li {
+      i {
         font-size: 30px;
       }
     }
+  }
 }
+@media only screen and (min-width: 0px) and (max-width: 425px) {
+  header {
+    grid-template-columns: 70% 30%;}
+    .content-menu{
+      li{
+        font-size: 20px!important;
+      }
+   }
 }
 /*  INDEX   ---------------------------------------------------------------*/
 
-.indexImagen{
+.indexImagen {
   position: relative;
   width: 100%;
   height: 600px;
   background-color: gray;
-    .indexImagenImagen{
-      img{
-        width: 1440px;
-        height: 600px;
-        opacity: 40%;
-      }
+  .indexImagenImagen {
+    img {
+      width: 1440px;
+      height: 600px;
+      opacity: 40%;
     }
-  .indexImagenTexto{
+  }
+  .indexImagenTexto {
     display: block;
     position: absolute;
-    top:30%;
+    top: 30%;
     color: white;
     width: 40%;
     text-align: center;
     margin-left: 30%;
     margin-right: 30%;
-    h1{
+    h1 {
       font-size: 46px;
       font-family: $--fuentePrincipal;
       text-transform: uppercase;
     }
-    p{
+    p {
       padding: 1rem;
       font-size: 20px;
       font-family: $--fuenteSecundaria;
       font-weight: 300;
     }
-    button{
+    button {
       @extend %btn;
     }
   }
 }
-.indexCategorias{
+.indexCategorias {
   display: grid;
   grid-template-columns: 23% 23% 23%;
   justify-content: center;
   text-align: center;
   padding-bottom: 2rem;
-  grid-gap:1rem;
-  div{
+  grid-gap: 1rem;
+  div {
     position: relative;
-    img{
+    img {
       width: 100%;
       max-height: 250px;
       opacity: 40%;
     }
-    span{
-      width:50%;
+    span {
+      width: 50%;
       height: 15%;
       position: absolute;
-      top:42.5%;
+      top: 42.5%;
       left: 25%;
       font-size: 20px;
       font-family: $--fuentePrincipal;
     }
   }
 }
-.indexSubtitulo{
+.indexSubtitulo {
   padding-top: 4rem;
   padding-bottom: 2rem;
   text-align: center;
   text-transform: uppercase;
 }
-div.primero{
+div.primero {
   grid-area: primero;
 }
-div.segundo{
+div.segundo {
   grid-area: segundo;
 }
-div.tercero{
+div.tercero {
   grid-area: tercero;
 }
-div.cuarto{
+div.cuarto {
   grid-area: cuarto;
 }
-h2.tituloEleginos{
+h2.tituloEleginos {
   grid-area: eleginos;
 }
-.indexElegirnos{
+.indexElegirnos {
   display: grid;
-  grid-template-areas: 
-  "eleginos eleginos eleginos eleginos"
-  "primero segundo tercero cuarto";
+  grid-template-areas:
+    "eleginos eleginos eleginos eleginos"
+    "primero segundo tercero cuarto";
   grid-template-columns: 17.25% 17.25% 17.25% 17.25%;
   text-align: center;
   justify-content: center;
   background-color: $--colorPrincipal;
   padding-bottom: 4rem;
-  img{
+  img {
     width: 160px;
     height: 160px;
     border-radius: 100%;
   }
-  h3,p{
+  h3,
+  p {
     width: 55%;
     padding: 1rem;
     text-align: center;
     margin: 0 auto;
     font-family: $--fuentePrincipal;
   }
-  p{
+  p {
     width: 90%;
     padding: 0;
     font-family: $--fuenteSecundaria;
     font-weight: 300;
   }
 }
-.indexRevendedores{
+.indexRevendedores {
   width: 75%;
   text-align: center;
   margin: 0 auto;
-  p{
+  p {
     font-size: 16px;
     padding-bottom: 2rem;
     font-family: $--fuenteSecundaria;
     font-weight: 300;
   }
-  button{
+  button {
     @extend %btn;
     margin-bottom: 4rem;
   }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
-  .indexCategorias{
+  .indexCategorias {
     grid-template-columns: 35% 35%;
   }
-  .indexElegirnos{
+  .indexElegirnos {
     display: grid;
-    grid-template-areas: 
-    "eleginos eleginos"
-    "primero segundo"
-    "tercero cuarto";
+    grid-template-areas:
+      "eleginos eleginos"
+      "primero segundo"
+      "tercero cuarto";
     grid-template-columns: 35% 35%;
     grid-gap: 1rem;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 1023px) {
-  .indexCategorias{
+
+  .indexCategorias {
     grid-template-columns: 60%;
   }
-  .indexElegirnos{
+  .indexElegirnos {
     display: grid;
-    grid-template-areas: 
-    "eleginos"
-    "primero" "segundo"
-    "tercero" "cuarto";
+    grid-template-areas:
+      "eleginos"
+      "primero" "segundo"
+      "tercero" "cuarto";
     grid-template-columns: 60%;
     grid-gap: 1rem;
   }
-  .indexElegirnos,.indexRevendedores,.indexCategorias{
+  .indexElegirnos,
+  .indexRevendedores,
+  .indexCategorias {
     font-size: 20px;
   }
-  .indexImagenTexto{
-    width: 80%!important;
-    margin-left: 10%!important;
-    margin-right: 10%!important;
-}
+  .indexImagenTexto {
+    width: 80% !important;
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+  }
 }
 /*CONTACTO -------------------------------------------------------*/
-.contactoGrid{
+.contactoGrid {
   display: grid;
   grid-template-columns: 35% 40%;
   justify-content: center;
   padding-bottom: 6rem;
-  main{
+  main {
     padding: 3rem;
-    h3{
+    h3 {
       text-transform: uppercase;
       font-size: 24px;
       font-family: $--fuentePrincipal;
     }
-    p{
+    p {
       font-size: 16px;
       font-family: $--fuenteSecundaria;
       font-weight: 300;
       padding-top: 2rem;
       width: 85%;
     }
-    .contactoGridP{
+    .contactoGridP {
       padding-top: 1rem;
     }
   }
-  article{
+  article {
     padding-top: 7rem;
-    input, textarea{
+    input,
+    textarea {
       width: 94%;
       border: rgb(195, 195, 195) 1px solid;
       border-radius: 5px;
@@ -455,12 +531,12 @@ h2.tituloEleginos{
       font-family: $--fuenteSecundaria;
       font-weight: 300;
     }
-    textarea{
+    textarea {
       height: 200px;
     }
-    div{
+    div {
       text-align: end;
-      .contactoGridBtn{
+      .contactoGridBtn {
         @extend %btn;
         border-radius: 0;
       }
@@ -468,12 +544,73 @@ h2.tituloEleginos{
   }
 }
 
-@media only screen and (min-width: 0px) and (max-width: 1439px) {
-  .contactoGrid{
+.container2 {
+  display: none;
+  width: 100%;
+  margin: auto;
+  height: 600px;
+  text-align: center;
+  margin-top: 2rem;
+  ul.slider2 {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    text-align: center;
+    li {
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0;
+      width: inherit;
+      background-color: white;
+      transition: opacity 0.5s;
+      h2{
+        font-size: 35px;
+        font-family: $--fuentePrincipal;
+        padding: 2rem;
+      }
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    li:first-child {
+      opacity: 1;
+    }
+  }
+  .slider2 li:target {
+    opacity: 1;
+  }
+  .menu2 {
+    text-align: center;
+
+    li {
+      margin: 0.5rem;
+      display: inline-flex;
+      a {
+        color: white;
+        background-color: gray;
+        padding: 10px;
+        width: 10px;
+        height: 10px;
+        font-size: 0px;
+        border-radius: 100%;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1023px) {
+  .container2{
+    display: block;
+  }
+  .contactoGrid {
     grid-template-columns: 85%;
-    padding-bottom: 2rem!important;
-    main{
-      p{
+    padding-bottom: 2rem !important;
+    main {
+      padding:0;
+      p {
         font-size: 16px;
         font-family: $--fuenteSecundaria;
         font-weight: 300;
@@ -481,20 +618,29 @@ h2.tituloEleginos{
         width: 100%;
       }
     }
-  article{
-    padding-top: 0px!important;
-    margin: 0rem 2.5rem;
+    article {
+      padding-top: 0px !important;
+      margin: 0rem 2.5rem;
     }
-    div{
-      text-align: center!important;
-      .contactoGridBtn{
-        width: 98%!important;
+    div {
+      text-align: center !important;
+      .contactoGridBtn {
+        width: 98% !important;
         border-radius: 0;
       }
     }
   }
-  input, textarea{
+  input,
+  textarea {
     width: 85%;
-    }
-    
+  }
+}
+
+@media only screen and (min-width: 750px){
+  .container{
+    display:block;
+  }
+  .container2{
+    display:none;
+  }
 }

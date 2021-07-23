@@ -8,6 +8,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   background-color: rgba(255, 255, 255, 0);
 }
 
@@ -25,8 +29,8 @@ a {
 header {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 20% 60% 20%;
-      grid-template-columns: 20% 60% 20%;
+  -ms-grid-columns: 20% 55% 15% 10%;
+      grid-template-columns: 20% 55% 15% 10%;
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -79,6 +83,77 @@ header input {
   margin-top: -2px;
   border-radius: 5px;
   border: 1px gray solid;
+}
+
+.icono-menu {
+  position: relative;
+  z-index: 10;
+}
+
+.icono-menu img {
+  vertical-align: top;
+  width: 30px;
+  cursor: pointer;
+}
+
+.menu {
+  display: none;
+}
+
+.content-menu {
+  background-color: white;
+  -webkit-box-shadow: 2px 0px 10px 1px grey;
+          box-shadow: 2px 0px 10px 1px grey;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  z-index: 11;
+  position: absolute;
+  text-align: end;
+}
+
+.content-menu .salir {
+  background-color: rgba(243, 243, 243, 0);
+  border: none;
+  width: 30px;
+  padding-top: 2rem;
+  font-size: 30px;
+  padding-right: 2rem;
+}
+
+.content-menu ul {
+  padding: 25px 0px 20px 0px;
+  text-align: start;
+}
+
+.content-menu ul li {
+  color: black;
+  font-size: 25px;
+  font-family: "Playfair Display", serif;
+  margin: 10px 50px;
+  cursor: pointer;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid black;
+}
+
+.content-menu ul li:hover {
+  background-color: white;
+}
+
+.opacity {
+  background-color: white;
+  -webkit-transition: all 5s ease;
+  transition: all 5s ease;
+}
+
+.active {
+  -webkit-transition: opacity 0.5s ease-out;
+  transition: opacity 0.5s ease-out;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .producto {
@@ -204,6 +279,7 @@ header input {
 }
 
 footer {
+  margin-top: 2rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 70% 30%;
@@ -252,8 +328,12 @@ footer .footerRedes li {
   header .headerLogo span {
     font-size: 25px;
   }
-  header nav, header input {
+  header nav,
+  header input {
     display: none;
+  }
+  header .menu {
+    display: block;
   }
   .producto {
     -ms-grid-columns: 100%;
@@ -319,6 +399,16 @@ footer .footerRedes li {
   }
   ul.footerRedes li i {
     font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 425px) {
+  header {
+    -ms-grid-columns: 70% 30%;
+        grid-template-columns: 70% 30%;
+  }
+  .content-menu li {
+    font-size: 20px !important;
   }
 }
 
@@ -451,7 +541,8 @@ h2.tituloEleginos {
   border-radius: 100%;
 }
 
-.indexElegirnos h3, .indexElegirnos p {
+.indexElegirnos h3,
+.indexElegirnos p {
   width: 55%;
   padding: 1rem;
   text-align: center;
@@ -511,7 +602,9 @@ h2.tituloEleginos {
         grid-template-columns: 60%;
     grid-gap: 1rem;
   }
-  .indexElegirnos, .indexRevendedores, .indexCategorias {
+  .indexElegirnos,
+  .indexRevendedores,
+  .indexCategorias {
     font-size: 20px;
   }
   .indexImagenTexto {
@@ -559,7 +652,8 @@ h2.tituloEleginos {
   padding-top: 7rem;
 }
 
-.contactoGrid article input, .contactoGrid article textarea {
+.contactoGrid article input,
+.contactoGrid article textarea {
   width: 94%;
   border: #c3c3c3 1px solid;
   border-radius: 5px;
@@ -581,11 +675,86 @@ h2.tituloEleginos {
   border-radius: 0;
 }
 
-@media only screen and (min-width: 0px) and (max-width: 1439px) {
+.container2 {
+  display: none;
+  width: 100%;
+  margin: auto;
+  height: 600px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.container2 ul.slider2 {
+  position: relative;
+  width: 100%;
+  height: 550px;
+  text-align: center;
+}
+
+.container2 ul.slider2 li {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: inherit;
+  background-color: white;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.container2 ul.slider2 li h2 {
+  font-size: 35px;
+  font-family: "Playfair Display", serif;
+  padding: 2rem;
+}
+
+.container2 ul.slider2 li img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container2 ul.slider2 li:first-child {
+  opacity: 1;
+}
+
+.container2 .slider2 li:target {
+  opacity: 1;
+}
+
+.container2 .menu2 {
+  text-align: center;
+}
+
+.container2 .menu2 li {
+  margin: 0.5rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.container2 .menu2 li a {
+  color: white;
+  background-color: gray;
+  padding: 10px;
+  width: 10px;
+  height: 10px;
+  font-size: 0px;
+  border-radius: 100%;
+  text-align: center;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1023px) {
+  .container2 {
+    display: block;
+  }
   .contactoGrid {
     -ms-grid-columns: 85%;
         grid-template-columns: 85%;
     padding-bottom: 2rem !important;
+  }
+  .contactoGrid main {
+    padding: 0;
   }
   .contactoGrid main p {
     font-size: 16px;
@@ -605,8 +774,18 @@ h2.tituloEleginos {
     width: 98% !important;
     border-radius: 0;
   }
-  input, textarea {
+  input,
+  textarea {
     width: 85%;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .container {
+    display: block;
+  }
+  .container2 {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
