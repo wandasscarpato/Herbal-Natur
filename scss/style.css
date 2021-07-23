@@ -68,6 +68,7 @@ header nav ul {
   display: -ms-inline-flexbox;
   display: inline-flex;
   font-family: "Playfair Display", serif;
+  font-weight: 600;
 }
 
 header nav ul li {
@@ -141,6 +142,10 @@ header input {
 
 .content-menu ul li:hover {
   background-color: white;
+}
+
+div#menu {
+  position: fixed;
 }
 
 .opacity {
@@ -276,6 +281,13 @@ header input {
   width: 220px;
   height: 280px;
   opacity: 50%;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
 }
 
 footer {
@@ -483,7 +495,7 @@ footer .footerRedes li {
   font-family: "Playfair Display", serif;
 }
 
-.indexSubtitulo {
+.subtitulo {
   padding-top: 4rem;
   padding-bottom: 2rem;
   text-align: center;
@@ -786,6 +798,28 @@ h2.tituloEleginos {
   }
   .container2 {
     display: none;
+  }
+}
+
+.revendedores {
+  width: 60%;
+  text-align: start;
+  margin: 0 auto;
+}
+
+.revendedores .subtitulo {
+  text-align: start;
+}
+
+.revendedores p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: 16px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 425px) {
+  .revendedores {
+    width: 92%;
   }
 }
 /*# sourceMappingURL=style.css.map */
