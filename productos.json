@@ -1,5 +1,6 @@
 [
     {
+        "ID": 1,
         "tipo": "Shampoo",
         "nombre": "Shampoo Neutro de Almendras",
         "descripcion": "Para lavados previos a cualquier tratamiento capilar. Deja el cabello extremadamente limpio y apto para cualquier tratamiento",
@@ -10,19 +11,16 @@
         "teñido": true,
         "frizz": true,
         "maltratado": true,
-        "presentaciones": [
-            {
-                "250ml": true,
-                "500ml": true,
-                "1100ml": true,
-                "5lts": true
-            }
-        ]
+        "ml250": true,
+        "ml500": true,
+        "ml1100": true,
+        "lts5": true
     },
     {
+        "ID": 2,
         "tipo": "Shampoo",
         "nombre": "Shampoo de Aguacate para cabello seco",
-        "descripcion": "Especialemnte diseñado para cabellos secos",
+        "descripcion": "Especialmente diseñado para cabellos secos",
         "graso": false,
         "seco": true,
         "dañado": false,
@@ -30,16 +28,13 @@
         "teñido": false,
         "frizz": true,
         "maltratado": false,
-        "presentaciones": [
-            {
-                "250ml": true,
-                "500ml": true,
-                "1100ml": true,
-                "5lts": true
-            }
-        ]
+        "ml250": true,
+        "ml500": true,
+        "ml1100": true,
+        "lts5": true
     },
     {
+        "ID": 3,
         "tipo": "Shampoo",
         "nombre": "Shampoo de Cercidium para cabello graso",
         "descripcion": "Especialemnte diseñado para cabellos grasos",
@@ -50,16 +45,13 @@
         "teñido": false,
         "frizz": false,
         "maltratado": false,
-        "presentaciones": [
-            {
-                "250ml": true,
-                "500ml": true,
-                "1100ml": true,
-                "5lts": true
-            }
-        ]
+        "ml250": true,
+        "ml500": true,
+        "ml1100": true,
+        "lts5": true
     },
     {
+        "ID": 4,
         "tipo": "Shampoo",
         "nombre": "Shampoo Vainilla ",
         "descripcion": "Para todo tipo de cabello, limpieza profunda excelente aroma",
@@ -70,16 +62,13 @@
         "teñido": false,
         "frizz": false,
         "maltratado": false,
-        "presentaciones": [
-            {
-                "250ml": true,
-                "500ml": true,
-                "1100ml": true,
-                "5lts": true
-            }
-        ]
+        "ml250": true,
+        "ml500": true,
+        "ml1100": true,
+        "lts5": true
     },
     {
+        "ID": 5,
         "tipo": "Shampoo",
         "nombre": "Shampoo Coco",
         "descripcion": "Para todo tipo de cabello, limpieza profunda excelente aroma",
@@ -90,16 +79,13 @@
         "teñido": false,
         "frizz": false,
         "maltratado": false,
-        "presentaciones": [
-            {
-                "250ml": true,
-                "500ml": true,
-                "1100ml": true,
-                "5lts": true
-            }
-        ]
+        "ml250": true,
+        "ml500": true,
+        "ml1100": true,
+        "lts5": true
     },
     {
+        "ID": 6,
         "tipo": "Shampoo",
         "nombre": "Shampoo Vegano",
         "descripcion": "Formulado sin materias primas de origen animal",
@@ -110,16 +96,13 @@
         "teñido": true,
         "frizz": true,
         "maltratado": true,
-        "presentaciones": [
-            {
-                "250ml": true,
-                "500ml": true,
-                "1100ml": true,
-                "5lts": true
-            }
-        ]
+        "ml250": true,
+        "ml500": true,
+        "ml1100": true,
+        "lts5": true
     },
     {
+        "ID": 7,
         "tipo": "Shampoo",
         "nombre": "Shampoo Extra Acido",
         "descripcion": "Preserva los aceites naturales y evita el frizz",
@@ -130,16 +113,13 @@
         "teñido": true,
         "frizz": false,
         "maltratado": true,
-        "presentaciones": [
-            {
-                "250ml": true,
-                "500ml": true,
-                "1100ml": true,
-                "5lts": true
-            }
-        ]
+        "ml250": true,
+        "ml500": true,
+        "ml1100": true,
+        "lts5": true
     },
     {
+        "ID": 8,
         "tipo": "Shampoo",
         "nombre": "Shampoo Vitaminico con Queratina",
         "descripcion": "Hidrata, devuelve la vitalidad, recupera las proteinas naturales",
@@ -150,16 +130,13 @@
         "teñido": true,
         "frizz": true,
         "maltratado": true,
-        "presentaciones": [
-            {
-                "250ml": true,
-                "500ml": true,
-                "1100ml": true,
-                "5lts": true
-            }
-        ]
+        "ml250": true,
+        "ml500": true,
+        "ml1100": true,
+        "lts5": true
     },
     {
+        "ID": 9,
         "tipo": "Shampoo",
         "nombre": "Shampoo con aceite de Argan",
         "descripcion": "Altamente Hidratante. Proteje y fortalece las puntas",
@@ -170,16 +147,13 @@
         "teñido": true,
         "frizz": true,
         "maltratado": true,
-        "presentaciones": [
-            {
-                "250ml": true,
-                "500ml": true,
-                "1100ml": true,
-                "5lts": true
-            }
-        ]
+        "ml250": true,
+        "ml500": true,
+        "ml1100": true,
+        "lts5": true
     },
     {
+        "ID": 10,
         "tipo": "Shampoo matizadores",
         "nombre": "Shampoo Silver Violeta",
         "descripcion": "Neutraliza lo tonos amarillentos en los cabellos claros teñidos o naturales. Usado tambien para Canas amarillentas",
@@ -190,16 +164,13 @@
         "teñido": true,
         "frizz": false,
         "maltratado": true,
-        "presentaciones": [
-            {
-                "250ml": true,
-                "500ml": true,
-                "1100ml": true,
-                "5lts": true
-            }
-        ]
+        "ml250": true,
+        "ml500": true,
+        "ml1100": true,
+        "lts5": true
     },
     {
+        "ID": 11,
         "tipo": "Shampoo matizadores",
         "nombre": "Shampoo Silver Azul",
         "descripcion": "Apaga y neutraliza los tonos anaranjados",
@@ -210,16 +181,13 @@
         "teñido": true,
         "frizz": false,
         "maltratado": true,
-        "presentaciones": [
-            {
-                "250ml": true,
-                "500ml": true,
-                "1100ml": true,
-                "5lts": true
-            }
-        ]
+        "ml250": true,
+        "ml500": true,
+        "ml1100": true,
+        "lts5": true
     },
     {
+        "ID": 12,
         "tipo": "Shampoo matizadores",
         "nombre": "Shampoo Silver Black",
         "descripcion": "Logra un platinado intenso y altamente luminoso.limina los tonos anaranjados y amarillentos ",
@@ -230,16 +198,13 @@
         "teñido": true,
         "frizz": false,
         "maltratado": true,
-        "presentaciones": [
-            {
-                "250ml": true,
-                "500ml": true,
-                "1100ml": true,
-                "5lts": true
-            }
-        ]
+        "ml250": true,
+        "ml500": true,
+        "ml1100": true,
+        "lts5": true
     },
     {
+        "ID": 13,
         "tipo": "Acondicionador",
         "nombre": "Acondicionador de Frutos del Bosque",
         "descripcion": "Suavidad natural. Excelente aroma",
@@ -250,16 +215,13 @@
         "teñido": true,
         "frizz": true,
         "maltratado": true,
-        "presentaciones": [
-            {
-                "250ml": true,
-                "500ml": true,
-                "1100ml": true,
-                "5lts": true
-            }
-        ]
+        "ml250": true,
+        "ml500": true,
+        "ml1100": true,
+        "lts5": true
     },
     {
+        "ID": 14,
         "tipo": "Acondicionador",
         "nombre": "Acondicionador de Manzanilla",
         "descripcion": "Suavidad natural. Excelente aroma. Realza los colores naturales.Aclarante natural ",
@@ -270,16 +232,13 @@
         "teñido": true,
         "frizz": true,
         "maltratado": true,
-        "presentaciones": [
-            {
-                "250ml": true,
-                "500ml": true,
-                "1100ml": true,
-                "5lts": true
-            }
-        ]
+        "ml250": true,
+        "ml500": true,
+        "ml1100": true,
+        "lts5": true
     },
     {
+        "ID": 15,
         "tipo": "Acondicionador",
         "nombre": "Acondicionador de Coco",
         "descripcion": "Suavidad natural. Excelente aroma. Evita el FRIZZ",
@@ -290,16 +249,13 @@
         "teñido": true,
         "frizz": true,
         "maltratado": true,
-        "presentaciones": [
-            {
-                "250ml": true,
-                "500ml": true,
-                "1100ml": true,
-                "5lts": true
-            }
-        ]
+        "ml250": true,
+        "ml500": true,
+        "ml1100": true,
+        "lts5": true
     },
     {
+        "ID": 16,
         "tipo": "Acondicionador",
         "nombre": "Acondicionador de Hierbas Silvestres",
         "descripcion": "Suavidad natural. Excelente aroma",
@@ -310,16 +266,13 @@
         "teñido": true,
         "frizz": true,
         "maltratado": true,
-        "presentaciones": [
-            {
-                "250ml": true,
-                "500ml": true,
-                "1100ml": true,
-                "5lts": true
-            }
-        ]
+        "ml250": true,
+        "ml500": true,
+        "ml1100": true,
+        "lts5": true
     },
     {
+        "ID": 17,
         "tipo": "Acondicionador",
         "nombre": "Acondicionador de Almendras",
         "descripcion": "Suavidad natural. Excelente aroma",
@@ -330,16 +283,13 @@
         "teñido": true,
         "frizz": true,
         "maltratado": true,
-        "presentaciones": [
-            {
-                "250ml": true,
-                "500ml": true,
-                "1100ml": true,
-                "5lts": true
-            }
-        ]
+        "ml250": true,
+        "ml500": true,
+        "ml1100": true,
+        "lts5": true
     },
     {
+        "ID": 18,
         "tipo": "Acondicionador Matizante",
         "nombre": "Acondicionador Silver Azul",
         "descripcion": " Neutraliza lo tonos amarillentos en los cabellos claros teñidos o naturales. Usado tambien para Canas amarillentas. Extra suavidad ",
@@ -350,16 +300,13 @@
         "teñido": false,
         "frizz": true,
         "maltratado": true,
-        "presentaciones": [
-            {
-                "250ml": true,
-                "500ml": true,
-                "1100ml": true,
-                "5lts": true
-            }
-        ]
+        "ml250": true,
+        "ml500": true,
+        "ml1100": true,
+        "lts5": true
     },
     {
+        "ID": 19,
         "tipo": "Acondicionador Matizante",
         "nombre": "Acondicionador Silver Violeta",
         "descripcion": "Apaga y neutraliza los tonos anaranjados. Extra suavidad",
@@ -370,16 +317,13 @@
         "teñido": false,
         "frizz": true,
         "maltratado": true,
-        "presentaciones": [
-            {
-                "250ml": true,
-                "500ml": true,
-                "1100ml": true,
-                "5lts": true
-            }
-        ]
+        "ml250": true,
+        "ml500": true,
+        "ml1100": true,
+        "lts5": true
     },
     {
+        "ID": 20,
         "tipo": "Acondicionador Matizante",
         "nombre": "Acondicionador Silver Black",
         "descripcion": "Logra un platinado intenso i altamente luminoso.limina los tonos anaranjados y amarillentos. Extra suavidad",
@@ -390,16 +334,13 @@
         "teñido": false,
         "frizz": true,
         "maltratado": true,
-        "presentaciones": [
-            {
-                "250ml": true,
-                "500ml": true,
-                "1100ml": true,
-                "5lts": true
-            }
-        ]
+        "ml250": true,
+        "ml500": true,
+        "ml1100": true,
+        "lts5": true
     },
     {
+        "ID": 21,
         "tipo": "Cremas Reparadoras",
         "nombre": "Crema Acida 3,5",
         "descripcion": "Sella la fibra capilar. Para cabellos maltratados",
@@ -410,16 +351,13 @@
         "teñido": true,
         "frizz": true,
         "maltratado": true,
-        "presentaciones": [
-            {
-                "250ml": true,
-                "500ml": true,
-                "1100ml": true,
-                "5lts": true
-            }
-        ]
+        "ml250": true,
+        "ml500": true,
+        "ml1100": true,
+        "lts5": true
     },
     {
+        "ID": 22,
         "tipo": "Cremas Reparadoras",
         "nombre": "Crema Acida 5,5",
         "descripcion": "Sella la fibra capilar. Recupera hidratación y suavidad",
@@ -430,16 +368,13 @@
         "teñido": true,
         "frizz": true,
         "maltratado": true,
-        "presentaciones": [
-            {
-                "250ml": true,
-                "500ml": true,
-                "1100ml": true,
-                "5lts": true
-            }
-        ]
+        "ml250": true,
+        "ml500": true,
+        "ml1100": true,
+        "lts5": true
     },
     {
+        "ID": 23,
         "tipo": "Cremas Oxidantes",
         "nombre": "Crema Oxidante 20 vol",
         "descripcion": "Crema para decoloracion suave",
@@ -450,16 +385,13 @@
         "teñido": false,
         "frizz": false,
         "maltratado": false,
-        "presentaciones": [
-            {
-                "250ml": true,
-                "500ml": true,
-                "1100ml": true,
-                "5lts": true
-            }
-        ]
+        "ml250": true,
+        "ml500": true,
+        "ml1100": true,
+        "lts5": true
     },
     {
+        "ID": 24,
         "tipo": "Cremas Oxidantes",
         "nombre": "Crema Oxidante 30 vol",
         "descripcion": "Crema para decoloracion media",
@@ -470,16 +402,13 @@
         "teñido": false,
         "frizz": false,
         "maltratado": false,
-        "presentaciones": [
-            {
-                "250ml": true,
-                "500ml": true,
-                "1100ml": true,
-                "5lts": true
-            }
-        ]
+        "ml250": true,
+        "ml500": true,
+        "ml1100": true,
+        "lts5": true
     },
     {
+        "ID": 25,
         "tipo": "Cremas Oxidantes",
         "nombre": "Crema Oxidante 40 vol",
         "descripcion": "Crema para decoloracion intensa",
@@ -490,16 +419,13 @@
         "teñido": false,
         "frizz": false,
         "maltratado": false,
-        "presentaciones": [
-            {
-                "250ml": true,
-                "500ml": true,
-                "1100ml": true,
-                "5lts": true
-            }
-        ]
+        "ml250": true,
+        "ml500": true,
+        "ml1100": true,
+        "lts5": true
     },
     {
+        "ID": 26,
         "tipo": "Baños de Crema",
         "nombre": "Baño de Crema relajante de Chocolate",
         "descripcion": "Otorga Brillo, docilidad y suavidad, Antifrizz. Aroma relajante",
@@ -510,16 +436,13 @@
         "teñido": true,
         "frizz": true,
         "maltratado": true,
-        "presentaciones": [
-            {
-                "250ml": true,
-                "500ml": true,
-                "1100ml": false,
-                "5lts": false
-            }
-        ]
+        "ml250": true,
+        "ml500": true,
+        "ml1100": false,
+        "lts5": false
     },
     {
+        "ID": 27,
         "tipo": "Baños de Crema",
         "nombre": "Baño de Crema relajante de Vainilla",
         "descripcion": "Otorga Brillo, docilidad y suavidad, Antifrizz. Aroma Relajante",
@@ -530,16 +453,13 @@
         "teñido": true,
         "frizz": true,
         "maltratado": true,
-        "presentaciones": [
-            {
-                "250ml": true,
-                "500ml": true,
-                "1100ml": false,
-                "5lts": false
-            }
-        ]
+        "ml250": true,
+        "ml500": true,
+        "ml1100": false,
+        "lts5": false
     },
     {
+        "ID": 28,
         "tipo": "Baños de Crema",
         "nombre": "Baño de Crema relajante de Coco",
         "descripcion": "Otorga Brillo, docilidad y suavidad, Antifrizz. Aroma Relajante",
@@ -550,16 +470,13 @@
         "teñido": true,
         "frizz": true,
         "maltratado": true,
-        "presentaciones": [
-            {
-                "250ml": true,
-                "500ml": true,
-                "1100ml": false,
-                "5lts": false
-            }
-        ]
+        "ml250": true,
+        "ml500": true,
+        "ml1100": false,
+        "lts5": false
     },
     {
+        "ID": 29,
         "tipo": "Baños de Crema",
         "nombre": "Baño de Crema multivitaminico con Colageno y Keratina",
         "descripcion": "Otorga Brillo, docilidad y suavidad, Antifrizz. Aroma Relajante. Reapara puntas dañadas, restablecer la salud del cabello y proteger la keratina capilar.",
@@ -570,16 +487,13 @@
         "teñido": true,
         "frizz": true,
         "maltratado": true,
-        "presentaciones": [
-            {
-                "250ml": true,
-                "500ml": true,
-                "1100ml": false,
-                "5lts": false
-            }
-        ]
+        "ml250": true,
+        "ml500": true,
+        "ml1100": false,
+        "lts5": false
     },
     {
+        "ID": 30,
         "tipo": "Baños de Crema",
         "nombre": "Baño de Crema al Oleo para peinar rizos",
         "descripcion": "Otorga suavidad natural, y facilita el peinado tanto de pelo lacio con con rizos",
@@ -590,16 +504,13 @@
         "teñido": true,
         "frizz": true,
         "maltratado": true,
-        "presentaciones": [
-            {
-                "250ml": true,
-                "500ml": true,
-                "1100ml": false,
-                "5lts": false
-            }
-        ]
+        "ml250": true,
+        "ml500": true,
+        "ml1100": false,
+        "lts5": false
     },
     {
+        "ID": 31,
         "tipo": "Cremas para Alisados",
         "nombre": "Crema para alisados con Keratina SOFT",
         "descripcion": "Nutricion e hidratacion inmediata. Antifrizz. Fortalece la fibra capilar ",
@@ -610,16 +521,13 @@
         "teñido": true,
         "frizz": true,
         "maltratado": true,
-        "presentaciones": [
-            {
-                "250ml": true,
-                "500ml": true,
-                "1100ml": true,
-                "5lts": true
-            }
-        ]
+        "ml250": true,
+        "ml500": true,
+        "ml1100": true,
+        "lts5": true
     },
     {
+        "ID": 32,
         "tipo": "Cremas para Alisados",
         "nombre": "Crema para alisados STRONG",
         "descripcion": "Eficaz tratamiento Antifrizz. Fortalece el cabello. Alisado perfecto y brillante ",
@@ -630,13 +538,9 @@
         "teñido": true,
         "frizz": true,
         "maltratado": true,
-        "presentaciones": [
-            {
-                "250ml": true,
-                "500ml": true,
-                "1100ml": true,
-                "5lts": true
-            }
-        ]
+        "ml250": true,
+        "ml500": true,
+        "ml1100": true,
+        "lts5": true
     }
 ]
