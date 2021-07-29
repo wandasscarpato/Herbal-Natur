@@ -227,6 +227,7 @@ div#menu{
   position: fixed;
   bottom:0;
   width: 100%;
+  padding: 0px;
   height: 50px;
 }
 footer {
@@ -250,6 +251,10 @@ footer {
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 1439px) {
+  .footer{
+    position:relative;
+    padding: 1rem;
+  }
   header {
     grid-template-columns: 80% 20%;
     height: 80px;
