@@ -24,9 +24,12 @@ $.getJSON(URLGET, function (respuesta, estado) {
           data.forEach(function (productos){
            html+=`
            <div class="productos">
+           <a href="../views/producto.html?producto=${productos.ID}">
+           <div>
               <img src="../img/producto1.png" alt="Producto">
-               <h3 class="quienesSomosSubTituloP"> ${productos.nombre}
-              </h3>
+               <h3 class="quienesSomosSubTituloP"> ${productos.nombre}</h3>
+           </div>
+               </a>
            </div>
            `;
           });
