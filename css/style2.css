@@ -2,6 +2,52 @@
     margin: 0;
     padding: 0%;
 }
+/*Boostrap*/
+
+a {
+    color: black;
+    text-decoration: none;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 600;
+    line-height: 1.2;
+}
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.menu a{
+    font-weight: 600;
+}
+
+body {
+    font-family: unset;
+
+}
+.footerRedes{
+    margin: 0;
+}
+input{
+    margin: 0; 
+font-family: sans-serif;
+ font-size: small; 
+line-height: normal ;
+}
+*, ::after, ::before {
+  box-sizing: none;
+}
+.content-menu img{
+    box-sizing: content-box;
+}
+
+header nav ul {   
+    display:inline-flex;
+    align-items: center;
+
+}
 
 /*Botones*/
 .filtrado {
@@ -13,7 +59,9 @@
     padding: 10px 0;
     transition: 0.3s; 
 }
-  
+  .subTitulo3{
+    font-family: 'Roboto', sans-serif;
+  }
 .filtrado:hover {
     background: rgb(160, 160, 160);
     width: 100%;
@@ -177,24 +225,8 @@ main{
     width: 100%;
 }
 
-/*Boostrap*/
 
-a {
-    color: black;
-    text-decoration: none;
-}
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-weight: 600;
-    line-height: 1.2;
-}
-*, ::after, ::before {
-    box-sizing: content-box;
-}
-.menu a{
-    font-weight: 600;
-}
+
     /*MEDIAQ*/
 
 @media (max-width: 1024px){
