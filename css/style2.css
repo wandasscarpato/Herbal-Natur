@@ -159,25 +159,42 @@ main{
     }
 
 .filtroDrop{
-    width: 100%;
     display: none;
 }
 
-.filtroDropB{
-    margin-top: 20px;
-    width: 120px;
-    height: 24px;
+.filtrado2 {
+    font-family: 'Roboto', sans-serif;
     display: inline-block;
-    background-color: rgb(219, 219, 219);
-border: #8b8b8b 0.1px solid;
-border-radius: 5px;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 3px 0;
+    transition: 0.3s; 
+}
+  
+.filtrado2:hover {
+    background: rgb(160, 160, 160);
+    width: 100%;
 }
 
-.filtroDrop a{
-display: inline-block;
+/*Boostrap*/
 
+a {
+    color: black;
+    text-decoration: none;
 }
-
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 600;
+    line-height: 1.2;
+}
+*, ::after, ::before {
+    box-sizing: content-box;
+}
+.menu a{
+    font-weight: 600;
+}
     /*MEDIAQ*/
 
 @media (max-width: 1024px){
@@ -221,6 +238,7 @@ display: inline-block;
 
     .filtroDrop{
         display: contents;
+        margin-top: 40px;
         }
         .productos {
           width: 180px;
