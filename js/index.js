@@ -14,7 +14,7 @@ fetch("./categorias.json")
         </a>`
     })
     
-    
+    let $meses = hola;
     var cate = document.querySelector(".indexCategorias");
     cate.innerHTML = html;
   });
