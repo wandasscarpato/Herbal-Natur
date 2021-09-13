@@ -154,6 +154,7 @@ main{
     margin-bottom: 10px;
 }
 
+
 .TodosNuestrosP h4{
     font-family: 'Playfair Display', serif;
     font-weight: 700;
@@ -162,6 +163,10 @@ main{
 
 
 /*PRODUCTOS*/
+.imgProductos{
+    width: 100%;
+    height: auto;
+}
 .productosListaContenedor{
     width: 80%;
     margin-bottom: 4%; 

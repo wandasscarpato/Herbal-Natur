@@ -49,7 +49,7 @@ function cargarJSON() {
            <div class="productos" category="${productos.cate}" category2="${productos.cate2}" category3="${productos.cate3}" category4="${productos.cate4}" category5="${productos.cate5}" category6="${productos.cate6}" tipos="${productos.tipos}" tipos2="${productos.tipos2}" tipos3="${productos.tipos3}" tipos4="${productos.tipos4}" tipos5="${productos.tipos5}" tipos6="${productos.tipos6}" tipos7="${productos.tipos7}" ingredientes="${productos.ingredientes}">
            <a href="../views/producto.html?producto=${productos.ID}">
            <div>
-              <img src="../img/producto1.png" alt="Producto">
+              <img class="imgProductos" src="${productos.img}" alt="Producto">
                <h3 class="quienesSomosSubTituloP"> ${productos.nombre}</h3>
            </div>
                </a>
