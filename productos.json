@@ -833,7 +833,7 @@
         "tipos6": "Maltratado",
         "tipos7": "Normal",
         "ingredientes": "Chocolate",
-        "img": "../img/productos/10.jpg"
+        "img": "../img/productos/7.jpg"
     },
     {
         "ID": 27,
@@ -865,7 +865,7 @@
         "tipos6": "Maltratado",
         "tipos7": "Normal",
         "ingredientes": "Vainilla",
-        "img": "../img/productos/10.jpg"
+        "img": "../img/productos/8.jpg"
     },
     {
         "ID": 28,
@@ -897,7 +897,7 @@
         "tipos6": "Maltratado",
         "tipos7": "Normal",
         "ingredientes": "Coco",
-        "img": "../img/productos/12.jpg"
+        "img": "../img/productos/11.jpg"
     },
     {
         "ID": 29,
@@ -929,7 +929,7 @@
         "tipos6": "Maltratado",
         "tipos7": "Normal",
         "ingredientes": "Keratina",
-        "img": "../img/productos/7.jpg"
+        "img": "../img/productos/10.jpg"
     },
     {
         "ID": 30,
@@ -961,7 +961,7 @@
         "tipos6": "Maltratado",
         "tipos7": "Normal",
         "ingredientes": "",
-        "img": "../img/productos/8.jpg"
+        "img": "../img/productos/12.jpg"
     },
     {
         "ID": 31,
@@ -993,7 +993,7 @@
         "tipos6": "Maltratado",
         "tipos7": "Normal",
         "ingredientes": "Keratina",
-        "img": "../img/productos/7.jpg"
+        "img": "../img/productos/9.jpg"
     },
     {
         "ID": 32,
@@ -1025,6 +1025,6 @@
         "tipos6": "Maltratado",
         "tipos7": "Normal",
         "ingredientes": "",
-        "img": "../img/productos/7.jpg"
+        "img": "../img/productos/12.jpg"
     }
 ]
