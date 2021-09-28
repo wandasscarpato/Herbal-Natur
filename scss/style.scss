@@ -1,5 +1,5 @@
 $--fuentePrincipal: "Playfair Display", serif;
-$--colorPrincipal: rgb(241, 238, 238);
+$--colorPrincipal: #99d6e5;
 $--fuenteSecundaria: "Roboto", sans-serif;
 %btn {
   width: 180px;
@@ -123,6 +123,10 @@ div#menu{
   opacity: 0;
   visibility: hidden;
 } 
+.productoImagen{
+  display: flex;
+  justify-content: center;
+}
 .producto {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -131,9 +135,7 @@ div#menu{
   font-weight: 300;
   padding-bottom: 3rem;
   img {
-    width: 720px;
     height: 650px;
-    opacity: 50%;
   }
   .productoDescripcion {
     padding: 4rem 0rem 0rem 2rem;

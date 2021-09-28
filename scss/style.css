@@ -35,7 +35,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #f1eeee;
+  background-color: #99d6e5;
   font-family: "Playfair Display", serif;
   align-items: center;
 }
@@ -161,6 +161,15 @@ div#menu {
   visibility: hidden;
 }
 
+.productoImagen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .producto {
   display: -ms-grid;
   display: grid;
@@ -174,9 +183,7 @@ div#menu {
 }
 
 .producto img {
-  width: 720px;
   height: 650px;
-  opacity: 50%;
 }
 
 .producto .productoDescripcion {
@@ -311,7 +318,7 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   padding: 1rem;
-  background-color: #f1eeee;
+  background-color: #99d6e5;
 }
 
 footer div {
@@ -558,7 +565,7 @@ h2.tituloEleginos {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #f1eeee;
+  background-color: #99d6e5;
   padding-bottom: 4rem;
 }
 

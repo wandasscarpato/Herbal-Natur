@@ -4,19 +4,23 @@ fetch("../productos.json")
   })
   .then(function (data) {
     let html = "";
+    let img = "";
     let sugerencia = "";
     let tipo;
     let nombre;
-    let contador=0;
+    let contador = 0;
     var queryString = window.location.search;
     var urlParams = new URLSearchParams(queryString);
     var ParamProd = urlParams.get("producto");
 
     data.forEach(function (productos) {
       if (productos.ID == ParamProd) {
-        tipo=productos.tipo;
-        nombre=productos.nombre;
+        tipo = productos.tipo;
+        nombre = productos.nombre;
+        img=`<img src="${productos.img}"/>`
         html += `
+        <article class="productoImagen"><img src="${productos.img}" alt="${productos.nombre}"/></article>
+        <article class="productoDescripcion">
       <div class="productoDescripcionTit">
       <span class="productoDescripcionTitulo">
       ${productos.nombre}
@@ -71,34 +75,35 @@ fetch("../productos.json")
   <div class="productoDescripcionWpp">
       <span class="productoDescripcionSubtitulo">¿Te interesa este producto? Hacé tu pedido por
           WhatsApp.</span> <br>
-      <button class="btnComprar"><i class="fab fa-whatsapp"></i>Comprar</button>
+      <a href="https://wa.me/1169508119"><button class="btnComprar"><i class="fab fa-whatsapp"></i>Comprar</button></a>
   </div>
+  </article>
+
          `;
-         
-    }
-    let prod=data.filter(function(el){
-        if(el.tipo == tipo){
-            return true;
-        } else{
-            return false;
+      }
+      let prod = data.filter(function (el) {
+        if (el.tipo == tipo) {
+          return true;
+        } else {
+          return false;
         }
-    })
-    prod.forEach(function(prod){
-        if(prod.nombre!=nombre && contador<4){
-        contador++;
-        sugerencia+=`<li>
+      });
+      prod.forEach(function (prod) {
+        if (prod.nombre != nombre && contador < 4) {
+          contador++;
+          sugerencia += `<li>
         <a href="../views/producto.html?producto=${prod.ID}">
         <h2>${prod.nombre}</h2>
-        <img src="../assets/img/img.jpeg" alt="">
+        <img src="${prod.img}" alt="">
         </a>
-        </li>`
+        </li>`;
         }
-        });
-    })
-    
-    
-    var prod = document.querySelector(".productoDescripcion");
+      });
+    });
+
+    var prod = document.querySelector(".producto");
     prod.innerHTML = html;
+   
     var suge = document.querySelector(".slider");
     suge.innerHTML = sugerencia;
   });

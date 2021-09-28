@@ -2,32 +2,32 @@
     {
         "nombre":"Shampoo",
         "texto":"Shampoo",
-        "imagen":"./assets/img/img.jpeg"
+        "imagen":"../assets/img/img.jpeg"
     },
     {
         "nombre":"Acondicionadores",
         "texto":"Acondicionador",
-        "imagen":"./assets/img/img.jpeg"
+        "imagen":"../assets/img/img.jpeg"
     },
     {
         "nombre":"Matizadores",
         "texto":"Matizadores",
-        "imagen":"./assets/img/img.jpeg"
+        "imagen":"../assets/img/img.jpeg"
     },
     {
         "nombre":"Cremas",
         "texto":"Cremas y Baños de crema",
-        "imagen":"./assets/img/img.jpeg"
+        "imagen":"../assets/img/img.jpeg"
     },
     {
         "nombre":"Tinturas",
         "texto":"Tinturas de fantasía",
-        "imagen":"./assets/img/img.jpeg"
+        "imagen":"../assets/img/img.jpeg"
     },
     {
         "nombre":"Otros",
         "texto":"Otros",
-        "imagen":"./assets/img/img.jpeg"
+        "imagen":"../assets/img/img.jpeg"
     }
 
 ]
